@@ -66,6 +66,23 @@ var askQuestion = function (questionsAsked) {
 	else {
 		console.log("Questions you got correct: " + correct);
 		console.log("game over");
+	//TRYING TO GET THIS TO WORK. ASKING IF PLAYER WANTS TO PLAY AGAIN	
+		// inquirer.prompt([
+		// 	{
+		// 		type: "confirm",
+		// 		message: "Would you like to play again?",
+		// 		name: "playAgain"		
+		// 	}
+		// ]).then(function(play){
+		// 	console.log(play);
+		// 	if (play.playAgain === "N" || "n" || "No" || "no") {
+		// 		console.log("Goodbye");
+		// 	}
+		// 	else {
+		// 		//askQuestion(0);
+		// 		console.log("Let's play again");
+		// 	}//else end
+		// })//play func end
 	}//else end
 };//askQuestion function end
 askQuestion(0);
