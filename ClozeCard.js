@@ -43,7 +43,6 @@ var askQuestion = function (questionsAsked) {
 		//confirm whether the user's answer is correct or not
 		]).then(function(answers){
 				//console.log(answers);
-				//console.log(answers.answer);
 				if (answers.answer === flashcardArray[questionsAsked].cloze) {
 					console.log("you are correct");
 					correct++;
@@ -61,23 +60,23 @@ var askQuestion = function (questionsAsked) {
 	else {
 		console.log("Questions you got correct: " + correct);
 		console.log("game over");
-	//TRYING TO GET THIS TO WORK. ASKING IF PLAYER WANTS TO PLAY AGAIN	
-		// inquirer.prompt([
-		// 	{
-		// 		type: "confirm",
-		// 		message: "Would you like to play again?",
-		// 		name: "playAgain"		
-		// 	}
-		// ]).then(function(play){
-		// 	console.log(play);
-		// 	if (play.playAgain === "N" || "n" || "No" || "no") {
-		// 		console.log("Goodbye");
-		// 	}
-		// 	else {
-		// 		//askQuestion(0);
-		// 		console.log("Let's play again");
-		// 	}//else end
-		// })//play func end
+	//ask if user wants to play again	
+		inquirer.prompt([
+			{
+				type: "confirm",
+				message: "Would you like to play again?",
+				name: "playAgain"		
+			}
+		]).then(function(play){
+			console.log(play);
+			if (play.playAgain === false) {
+				console.log("Goodbye");
+			}
+			else {
+				console.log("Let's play again");
+				askQuestion(0);
+			}//else end
+		})//play func end
 	}//else end
 };//askQuestion function end
 askQuestion(0);
