@@ -1,12 +1,22 @@
 [
 	{
-		"front": "... hit the most total homeruns in the history of major league baseball.",
-		"back": "Barry Bonds"
+		"front": "Barry ... hit the most total homeruns in the history of major league baseball.",
+		"back": "Bonds"
 	},
 	{
-		"front": "The ... won the 1995 world series.",
-		"back": "Atlanta Braves"
+		"front": "The ... Braves won the 1995 world series.",
+		"back": "Atlanta"
+	},
+	{
+		"front": "Ted ... was the last player to hit .400.",
+		"back": "Williams"
+	},
+	{
+		"front": "Hank Aaron's nickname was the ... .",
+		"back": "Hammer"
+	},
+	{
+		"front": "... Jackson once hit 3 homeruns in a world series game.",
+		"back": "Reggie"
 	}
 ]
-
-

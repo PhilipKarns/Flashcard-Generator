@@ -3,8 +3,6 @@ var inquirer = require("inquirer");
 
 //requiring the json file where the questions and answers are stored
 var questions = require("./cloze.json");
-console.log("here's the question: ");
-console.log(questions);
 
 //array to hold flashcard objects
 var flashcardArray = [];
@@ -37,7 +35,7 @@ var askQuestion = function (questionsAsked) {
 		inquirer.prompt([
 			{
 				type: "input",
-				message: flashcardArray[questionsAsked].text, 
+				message: flashcardArray[questionsAsked].text + "\nAnswer: ", 
 				name: "answer"		
 			}
 		//confirm whether the user's answer is correct or not
@@ -68,7 +66,6 @@ var askQuestion = function (questionsAsked) {
 				name: "playAgain"		
 			}
 		]).then(function(play){
-			console.log(play);
 			if (play.playAgain === false) {
 				console.log("Goodbye");
 			}

@@ -1,10 +1,22 @@
 [
 	{
 		"text": "Barry Bonds hit the most total homeruns in the history of major league baseball.",
-		"cloze": "Barry Bonds"
+		"cloze": "Bonds"
 	},
 	{
 		"text": "The Atlanta Braves won the 1995 world series.",
-		"cloze": "Atlanta Braves"
+		"cloze": "Atlanta"
+	},
+	{
+		"text": "Ted Williams was the last player to hit .400.",
+		"cloze": "Williams"
+	},
+	{
+		"text": "Hank Aaron's nickname was the Hammer.",
+		"cloze": "Hammer"
+	},
+	{
+		"text": "Reggie Jackson once hit 3 homeruns in a world series game.",
+		"cloze": "Reggie"
 	}
 ]
